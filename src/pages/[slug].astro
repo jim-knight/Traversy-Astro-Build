@@ -21,7 +21,7 @@ const { Content, frontmatter } = Astro.props.post;
 <Layout title={frontmatter.title}>
 	<section class="page-content">
 		<div class="container">
-			<card>
+			<Card>
 				<a class="btn" href="/blog">Go Back</a>
 				<h2>{frontmatter.title}</h2>
 				<div>
@@ -30,7 +30,7 @@ const { Content, frontmatter } = Astro.props.post;
 					}
 				</div>
 				<Content />
-			</card>
+			</Card>
 		</div>
 	</section>
 </Layout>
